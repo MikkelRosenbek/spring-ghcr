@@ -16,13 +16,13 @@ jobs:
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
 
       - name: Set up JDK
-        uses: actions/setup-java@v5
+        uses: actions/setup-javadded0888837ed1f317902acf8a20df0ad188d165 # v5.0.0
         with:
           java-version: '21'
           distribution: 'temurin'
 
       - name: Cache Maven packages
-        uses: actions/638ed79f9dc94c1de1baef91bcab5edaa19451f4 # v4.0.0
+        uses: actions/cache638ed79f9dc94c1de1baef91bcab5edaa19451f4 # v4.0.0
         with:
           path: ~/.m2/repository
           key: maven-${{ hashFiles('**/pom.xml') }}
